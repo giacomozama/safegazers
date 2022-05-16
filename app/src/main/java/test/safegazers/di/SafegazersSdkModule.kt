@@ -15,9 +15,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class SafegazersSdkModule {
 
-    /*@Provides
-    fun provideSafeStargazersService(): SafeStargazersService = SafegazersSdk.DefaultSafeStargazersService*/
-
     @Provides
     fun provideSafeStargazersServiceFactory(): SafeStargazersServiceFactory = SafegazersSdk.SafeStargazersServiceFactory
 

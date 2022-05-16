@@ -16,6 +16,7 @@ value class SecurityCheckSpec(private val spec: Int) {
     val isForgiveErrors get() = spec and Flags.ForgiveErrors != 0
 
 
+    @Suppress("unused")
     class Builder {
 
         private var spec: Int = 0

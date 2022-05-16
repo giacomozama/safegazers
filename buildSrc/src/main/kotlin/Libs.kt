@@ -6,9 +6,6 @@ object Libs {
 
     const val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
 
-    const val okHttp = "com.squareup.okhttp3:okhttp:4.9.3"
-    const val leakCanary = "com.squareup.leakcanary:leakcanary-android:2.9.1"
-
     const val rootBeer = "com.scottyab:rootbeer-lib:0.1.0"
 
     object AndroidX {
@@ -46,7 +43,7 @@ object Libs {
 
     object Dagger {
         private const val version = "2.42"
-        
+
         const val dagger = "com.google.dagger:dagger:$version"
         const val compiler = "com.google.dagger:dagger-compiler:$version"
 

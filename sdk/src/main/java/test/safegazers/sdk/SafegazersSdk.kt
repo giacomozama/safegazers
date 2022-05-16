@@ -2,6 +2,7 @@ package test.safegazers.sdk
 
 import test.safegazers.sdk.di.DaggerSdkComponent
 
+@Suppress("unused")
 object SafegazersSdk {
 
     private val component = DaggerSdkComponent.create()

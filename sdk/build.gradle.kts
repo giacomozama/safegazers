@@ -35,6 +35,10 @@ android {
 
     kotlinOptions {
         jvmTarget = "11"
+
+        freeCompilerArgs = freeCompilerArgs + listOf(
+            "-opt-in=kotlin.ExperimentalStdlibApi"
+        )
     }
 }
 
@@ -52,6 +56,7 @@ dependencies {
     kapt(Libs.Moshi.codeGen)
     kapt(Libs.Dagger.compiler)
 
+    kaptTest(Libs.Dagger.compiler)
     testImplementation(Libs.jUnit)
     androidTestImplementation(Libs.AndroidX.androidJUnit)
     androidTestImplementation(Libs.AndroidX.espresso)

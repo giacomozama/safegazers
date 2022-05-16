@@ -6,6 +6,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 
+@Suppress("unused")
 internal class LocalDateTimeAdapter {
 
     @ToJson
