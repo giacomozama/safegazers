@@ -6,12 +6,6 @@ plugins {
     id("dagger.hilt.android.plugin")
 }
 
-repositories {
-    flatDir {
-        dirs("libs")
-    }
-}
-
 android {
     compileSdk = Versions.CompileSdk
 
@@ -20,7 +14,7 @@ android {
         minSdk = 23
         targetSdk = Versions.TargetSdk
         versionCode = 1
-        versionName = "0.1"
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" // "test.safegazers.SafegazersTestRunner"
         vectorDrawables {

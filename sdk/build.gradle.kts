@@ -5,12 +5,6 @@ plugins {
     id("maven-publish")
 }
 
-repositories {
-    flatDir {
-        dirs("libs")
-    }
-}
-
 android {
     compileSdk = Versions.CompileSdk
 
