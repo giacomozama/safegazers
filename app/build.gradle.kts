@@ -20,7 +20,7 @@ android {
         minSdk = 23
         targetSdk = Versions.TargetSdk
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" // "test.safegazers.SafegazersTestRunner"
         vectorDrawables {

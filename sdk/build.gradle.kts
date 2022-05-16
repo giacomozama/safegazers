@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("kapt")
+    id("maven-publish")
 }
 
 repositories {
@@ -61,4 +62,15 @@ dependencies {
     androidTestImplementation(Libs.AndroidX.androidJUnit)
     androidTestImplementation(Libs.AndroidX.espresso)
     androidTestImplementation(Libs.AndroidX.Compose.uiTestJUnit)
+}
+
+afterEvaluate {
+    publishing {
+        publications.create<MavenPublication>("release") {
+            from(components.getByName("release"))
+            groupId = "test.safegazers"
+            artifactId = "sdk"
+            version = "0.1"
+        }
+    }
 }
