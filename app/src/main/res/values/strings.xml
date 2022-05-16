@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Safegazers Sample App</string>
+
+  <string name="starred_at">Starred at: %1$s</string>
+  <string name="get_stargazers">Get Stargazers</string>
+  <string name="repo_owner">Repository owner</string>
+  <string name="repo_name">Repository name</string>
+  <string name="error">Error</string>
+  <string name="unknown_error">Unknown error</string>
+</resources>
